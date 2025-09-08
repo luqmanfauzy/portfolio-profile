@@ -1,0 +1,53 @@
+.gradient-bg {
+  background: linear-gradient(135deg, #222831 0%, #393e46 100%);
+}
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.skill-badge {
+  transition: all 0.3s ease;
+}
+.skill-badge:hover {
+  transform: scale(1.05);
+  background-color: #948979;
+  color: #222831;
+}
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.typing-animation {
+  border-right: 2px solid #948979;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%,
+  50% {
+    border-color: #948979;
+  }
+  51%,
+  100% {
+    border-color: transparent;
+  }
+}

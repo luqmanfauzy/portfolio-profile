@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - Cashflow Management System Web App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-primary': '#000000', // slate-950
+                        'light': '#eff6ff', // blue-50
+                        'accent': '#0084d1', // blue
+                        'dark-secondary': '#17202e' // abu abu
+                    },
+                },
+                fontFamily: {
+                    sans: ['"Mona Sans"', 'Inter', 'system-ui', 'sans-serif']
+                }
+            }
+        }
+    </script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-inner img {
+            object-fit: cover;
+        }
+
+        .bungee-regular {
+            font-family: "Bungee", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .chakra-petch-regular {
+            font-family: "Chakra Petch", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .bordered {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body class="bg-dark-primary text-dark-primary font-sans">
+    <!-- Hero Section -->
+    <section class="py-16 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 font-sans">Cashflow Management System Web App</h1>
+            <p class="text-lg max-w-2xl mx-auto ">A web application for managing cash flow and financial transactions
+                with a modern design and user friendly interface
+            </p>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="py-12 mx-auto rounded-lg w-full md:w-3/4">
+        <div class="container mx-auto px-4">
+            <div id="projectCarousel" class="carousel slide rounded-xl overflow-hidden border-2 border-accent p-2"
+                data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://res.cloudinary.com/ded1qbely/image/upload/v1744812949/CashFlow-ss1-detailProject_xkilbj.png"
+                            class="d-block w-full h-full" alt="Screenshot 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/ded1qbely/image/upload/v1744812948/CashFlow-ss2-detailProject_bwdd94.png"
+                            class="d-block w-full" alt="Screenshot 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/ded1qbely/image/upload/v1744812948/CashFlow-ss3-detailProject_si1r2f.png"
+                            class="d-block w-full" alt="Screenshot 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/ded1qbely/image/upload/v1755846160/inventory-ss4-detailProject_ikrqlx.png"
+                            class="d-block w-full" alt="Screenshot 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/ded1qbely/image/upload/v1744812948/CashFlow-ss5-detailProject_r5zybs.png"
+                            class="d-block w-full" alt="Screenshot 5">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Description -->
+    <section class="py-16 bg-dark-primary">
+        <div class="max-w-5xl mx-auto px-6">
+            <!-- Title -->
+            <h2 class="text-3xl font-bold text-center text-light mb-6">Project Overview</h2>
+
+            <!-- Description -->
+            <p class="text-gray-300 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+                This project is a web application designed to manage cash flow and financial transactions. It provides a
+                user-friendly interface for users to input, track, and analyze their financial data. The application
+                includes features such as transaction management, reporting, and data visualization to help users
+                understand their financial situation better.
+            </p>
+
+            <!-- Divider -->
+            <div class="w-20 h-1 bg-accent mx-auto my-10 rounded-full"></div>
+
+            <!-- Technology Used -->
+            <h3 class="text-2xl font-semibold text-center text-light mb-6">Technology Used</h3>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span
+                    class="bg-dark-secondary text-accent px-4 py-2 rounded-xl shadow-md hover:bg-accent hover:text-white transition text-sm font-medium">
+                    <a href="https://laravel.com/" target="_blank">Laravel</a>
+                </span>
+                <span
+                    class="bg-dark-secondary text-accent px-4 py-2 rounded-xl shadow-md hover:bg-accent hover:text-white transition text-sm font-medium">
+                    <a href="https://vuejs.org/">Vue JS</a>
+                </span>
+                <span
+                    class="bg-dark-secondary text-accent px-4 py-2 rounded-xl shadow-md hover:bg-accent hover:text-white transition text-sm font-medium">
+                    <a href="https://inertiajs.com/">Inertia JS</a>
+                </span>
+                <span
+                    class="bg-dark-secondary text-accent px-4 py-2 rounded-xl shadow-md hover:bg-accent hover:text-white transition text-sm font-medium">
+                    <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>
+                </span>
+                <span
+                    class="bg-dark-secondary text-accent px-4 py-2 rounded-xl shadow-md hover:bg-accent hover:text-white transition text-sm font-medium">
+                    <a href="https://www.mysql.com/" target="_blank">MySQL</a>
+                </span>
+            </div>
+
+            <!-- Back Button -->
+            <div class="text-center mt-12">
+                <a href="../index.html"
+                    class="inline-block px-6 py-3 rounded-xl bg-accent text-white font-medium shadow-md transform hover:scale-105 transition">
+                    ← Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
